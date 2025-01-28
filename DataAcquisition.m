@@ -4,7 +4,7 @@
 %% Inizializzazione
 close all; clear; clc;
 
-% Configurazione del dispositivo
+% Configurazione del dispositivo mobile
 smartphone = mobiledev;
 
 % Attivazione dei sensori
