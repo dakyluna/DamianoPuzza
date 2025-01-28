@@ -107,7 +107,7 @@ while continueViewing
             title('Orientazione');
             xlabel('Tempo [s]');
             ylabel('Gradi [°]');
-            legend('Roll', 'Pitch', 'Yaw');
+            legend('X', 'Y', 'Z');
         end
     end
     
