@@ -6,8 +6,7 @@ close all; clear; clc;
 load('signalsStructFile.mat');
 
 % Sottoinsieme gesti target (esempio)
-targetGestures = {'Class 0', 'Class 9', 'Class 1'};
-
+targetGestures = {'Class 0', 'Class 2', 'Class 3', 'Class 24'};
 % Inizializzazione tabella vuota con le colonne corrette
 featureNames = {
     'AccMeanX', 'AccMeanY', 'AccMeanZ', ...
