@@ -75,7 +75,7 @@ for gestureIdx = 1:length(allGestures)
         smartphone.discardlogs;
         
         % Verifica che ci siano almeno 250 campioni
-        if size(acc, 1) < 250
+        if any([size(acc,1), size(gyro,1), size(mag,1), size(orientation,1)] < 250)
             error('Acquisizione troppo corta! Ripetere il gesto.');
         end
 
