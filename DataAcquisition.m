@@ -63,16 +63,17 @@ for gestureIdx = 1:length(allGestures)
         end
         
         % Acquisizione
-        smartphone.Logging = 1;
-        pause(3.5); %dovrebbe essere 2,5 ma spesso i campionamenti sono meno di 250
-        smartphone.Logging = 0;
+        smartphone.Logging = 1; % Attiva la registrazione dei dati dallo smartphone.
+        pause(3.5); %dovrebbe essere 2,5s ma spesso i campionamenti sono meno di 250 quindi attendiamo 3.5s per raccogliere un numero sufficiente di campioni.
+        smartphone.Logging = 0; % Ferma la registrazione.
         
         % Raccolta dati
+        % Recupera i dati di accelerazione, giroscopio, campo magnetico e orientamento dallo smartphone.
         [acc, ~] = accellog(smartphone);
         [gyro, ~] = angvellog(smartphone);
         [mag, ~] = magfieldlog(smartphone);
         [orientation, ~] = orientlog(smartphone);
-        smartphone.discardlogs;
+        smartphone.discardlogs; % Dopo la raccolta, i log vengono eliminati per liberare memoria.
         
         % Verifica che ci siano almeno 250 campioni
         if any([size(acc,1), size(gyro,1), size(mag,1), size(orientation,1)] < 250)

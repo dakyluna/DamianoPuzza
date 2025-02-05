@@ -12,11 +12,11 @@ subjects = fieldnames(signalsStructFile);
 %% Generazione tabella Metadati.csv
 for subjIdx = 1:length(subjects)
     personID = subjects{subjIdx};
-    acquisitions = fieldnames(signalsStructFile.(personID));
+    acquisitions = fieldnames(signalsStructFile.(personID)); % Per ogni soggetto (personID), prende tutte le acquisizioni disponibili.
     
     for acqIdx = 1:length(acquisitions)
         acqName = acquisitions{acqIdx};
-        data = signalsStructFile.(personID).(acqName);
+        data = signalsStructFile.(personID).(acqName); % Per ogni acquisizione, raccoglie i metadati e aggiunge una riga alla tabella dataTable
         
         % Aggiunta riga alla tabella
         newRow = table({personID}, acqIdx, {data.Hand}, {data.SmartphoneModel}, ...
@@ -67,11 +67,11 @@ while continueViewing
     
     % Visualizza i dati filtrati
     selectedAcquisitions = fieldnames(userAcquisitions);
-    for acqIdx = 1:length(selectedAcquisitions)
+    for acqIdx = 1:length(selectedAcquisitions) % Scorre tutte le acquisizioni dell'utente selezionato.
         acqName = selectedAcquisitions{acqIdx};
         data = userAcquisitions.(acqName);
         
-        % Filtra per classe di gesto
+        % Filtra solo quelle che corrispondono alla classe di gesto scelta.
         if strcmp(data.GestureID, selectedGesture)
             % Visualizzazione del grafico
             time = (0:249) / 100; % Assume 100 Hz e 250 campioni
