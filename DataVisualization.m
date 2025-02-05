@@ -1,35 +1,9 @@
 % DataVisualization.m
-% Script per visualizzare i dati e generare annotazioni
+% Script per visualizzare i dati
 
 %% Inizializzazione
 close all; clc;
 load('signalsStructFile.mat');
-
-% Creazione tabella CSV (per tutte le acquisizioni)
-dataTable = table();
-subjects = fieldnames(signalsStructFile);
-
-%% Generazione tabella Metadati.csv
-for subjIdx = 1:length(subjects)
-    personID = subjects{subjIdx};
-    acquisitions = fieldnames(signalsStructFile.(personID)); % Per ogni soggetto (personID), prende tutte le acquisizioni disponibili.
-    
-    for acqIdx = 1:length(acquisitions)
-        acqName = acquisitions{acqIdx};
-        data = signalsStructFile.(personID).(acqName); % Per ogni acquisizione, raccoglie i metadati e aggiunge una riga alla tabella dataTable
-        
-        % Aggiunta riga alla tabella
-        newRow = table({personID}, acqIdx, {data.Hand}, {data.SmartphoneModel}, ...
-            {data.AvailableSensors}, {data.GestureID}, ...
-            'VariableNames', {'ID_Subject', 'Idx_Acquisition', 'Hand', ...
-            'Smartphone_model', 'Available_Sensors', 'ID_Gesture'});
-        dataTable = [dataTable; newRow];
-    end
-end
-
-% Salvataggio della tabella completa
-writetable(dataTable, 'Metadati.csv');
-disp('File Metadati.csv generato con tutte le acquisizioni!');
 
 %% Selezione interattiva per visualizzazione
 disp('Elenco utenti disponibili:');
@@ -67,11 +41,11 @@ while continueViewing
     
     % Visualizza i dati filtrati
     selectedAcquisitions = fieldnames(userAcquisitions);
-    for acqIdx = 1:length(selectedAcquisitions) % Scorre tutte le acquisizioni dell'utente selezionato.
+    for acqIdx = 1:length(selectedAcquisitions)
         acqName = selectedAcquisitions{acqIdx};
         data = userAcquisitions.(acqName);
         
-        % Filtra solo quelle che corrispondono alla classe di gesto scelta.
+        % Filtra per classe di gesto
         if strcmp(data.GestureID, selectedGesture)
             % Visualizzazione del grafico
             time = (0:249) / 100; % Assume 100 Hz e 250 campioni
