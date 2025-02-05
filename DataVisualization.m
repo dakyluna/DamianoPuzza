@@ -7,6 +7,7 @@ load('signalsStructFile.mat');
 
 %% Selezione interattiva per visualizzazione
 disp('Elenco utenti disponibili:');
+subjects = fieldnames(signalsStructFile);
 disp(subjects);
 while true
     selectedUser = input('Inserisci l''ID del soggetto da visualizzare (es. "P1"): ', 's');
