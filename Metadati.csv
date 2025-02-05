@@ -1,72 +1,21 @@
-ID_Subject,Idx_Acquisition,Hand,Smartphone_model,Available_Sensors,ID_Gesture
-p1,1,sx,DamianoFrocio,1-2-3-4,Class 0
-p1,2,sx,DamianoFrocio,1-2-3-4,Class 0
-p1,3,sx,DamianoFrocio,1-2-3-4,Class 0
-p1,4,sx,DamianoFrocio,1-2-3-4,Class 0
-p1,5,sx,DamianoFrocio,1-2-3-4,Class 0
-p1,6,sx,DamianoFrocio,1-2-3-4,Class 1
-p1,7,sx,DamianoFrocio,1-2-3-4,Class 1
-p1,8,sx,DamianoFrocio,1-2-3-4,Class 1
-p1,9,sx,DamianoFrocio,1-2-3-4,Class 1
-p1,10,sx,DamianoFrocio,1-2-3-4,Class 1
-p2,1,sx,DamianoDiarrea,1-2-3-4,Class 0
-p2,2,sx,DamianoDiarrea,1-2-3-4,Class 0
-p2,3,sx,DamianoDiarrea,1-2-3-4,Class 0
-p2,4,sx,DamianoDiarrea,1-2-3-4,Class 0
-p2,5,sx,DamianoDiarrea,1-2-3-4,Class 0
-p2,6,sx,DamianoDiarrea,1-2-3-4,Class 1
-p2,7,sx,DamianoDiarrea,1-2-3-4,Class 1
-p2,8,sx,DamianoDiarrea,1-2-3-4,Class 1
-p2,9,sx,DamianoDiarrea,1-2-3-4,Class 1
-p2,10,sx,DamianoDiarrea,1-2-3-4,Class 1
-p3,1,Class 8,dxfbg,1-2-3-4,Class 8
-p3,2,Class 8,dxfbg,1-2-3-4,Class 8
-p3,3,Class 8,dxfbg,1-2-3-4,Class 8
-p3,4,Class 8,dxfbg,1-2-3-4,Class 8
-p3,5,Class 8,dxfbg,1-2-3-4,Class 8
-p3,6,Class 8,dxfbg,1-2-3-4,Class 9
-p3,7,Class 8,dxfbg,1-2-3-4,Class 9
-p3,8,Class 8,dxfbg,1-2-3-4,Class 9
-p3,9,dx,yftgv,1-2-3-4,Class 14
-p3,10,dx,yftgv,1-2-3-4,Class 14
-p3,11,dx,yftgv,1-2-3-4,Class 14
-p3,12,dx,yftgv,1-2-3-4,Class 14
-p3,13,dx,yftgv,1-2-3-4,Class 14
-p3,14,dx,yftgv,1-2-3-4,Class 15
-p3,15,dx,yftgv,1-2-3-4,Class 15
-p3,16,dx,yftgv,1-2-3-4,Class 15
-p3,17,dx,yftgv,1-2-3-4,Class 15
-p3,18,dx,yftgv,1-2-3-4,Class 15
-p4,1,sx,azsfcead,1-2-3-4,Class 8
-p4,2,sx,azsfcead,1-2-3-4,Class 8
-p4,3,sx,azsfcead,1-2-3-4,Class 8
-p4,4,sx,azsfcead,1-2-3-4,Class 8
-p4,5,sx,azsfcead,1-2-3-4,Class 8
-p6,1,sx,dzvsge,1-2-3-4,Class 9
-p6,2,sx,dzvsge,1-2-3-4,Class 9
-p6,3,sx,dzvsge,1-2-3-4,Class 9
-p6,4,sx,dzvsge,1-2-3-4,Class 9
-p6,5,sx,dzvsge,1-2-3-4,Class 9
-p6,6,sx,dzvsge,1-2-3-4,Class 10
-p56,1,sx,Xiao,1-2-3-4,Class 2
-p56,2,sx,Xiao,1-2-3-4,Class 2
-p56,3,sx,Xiao,1-2-3-4,Class 2
-p56,4,sx,Xiao,1-2-3-4,Class 2
-p56,5,sx,Xiao,1-2-3-4,Class 2
-p56,6,sx,Xiao,1-2-3-4,Class 3
-p56,7,sx,Xiao,1-2-3-4,Class 3
-p285302805,1,sx,sdgvd,1-2-3-4,Class 13
-p285302805,2,sx,sdgvd,1-2-3-4,Class 13
-p285302805,3,sx,sdgvd,1-2-3-4,Class 13
-p285302805,4,sx,sdgvd,1-2-3-4,Class 13
-p285302805,5,sx,sdgvd,1-2-3-4,Class 13
-p285302805,6,sx,sdgvd,1-2-3-4,Class 14
-p49,1,dx,yghjk,1-2-3-4,Class 8
-p49,2,dx,yghjk,1-2-3-4,Class 8
-p49,3,dx,yghjk,1-2-3-4,Class 8
-p43,1,dx,wsvdf,1-2-3-4,Class 0
-p75,1,sx,sdgs,1-2-3-4,Class 0
-p75,2,sx,sdgs,1-2-3-4,Class 0
-p79,1,sx,sdgs,1-2-3-4,Class 0
-Davide_C,1,sx,fdbgr,1-2-3-4,Class 7
-Davide_C,2,sx,fdbgr,1-2-3-4,Class 7
+ID_Subject,Idx_Acquisition,Hand,SmartphoneModel,Available_Sensors,ID_Gesture
+hgnfgbdvf,1,dx, xbdfvcdx,1-2-3-4,Class 0
+hgnfgbdvf,2,dx, xbdfvcdx,1-2-3-4,Class 0
+hgnfgbdvf,3,dx, xbdfvcdx,1-2-3-4,Class 0
+hgnfgbdvf,4,dx, xbdfvcdx,1-2-3-4,Class 0
+hgnfgbdvf,5,dx, xbdfvcdx,1-2-3-4,Class 0
+fngcbvxdzs,1,dx, xbdfvcdx,1-2-3-4,Class 0
+Damiano_puzza,1,sx,Smerdphone4,1-2-3-4,Class 15
+gmhnfcbvfxcdz,1,dx,fngbdvsc,1-2-3-4,Class 8
+gmhnfcbvfxcdz,2,dx,fngbdvsc,1-2-3-4,Class 8
+hbnv_cx,1,sx,gbfdvxcz,1-2-3-4,Class 7
+hbnv_cx,2,sx,gbfdvxcz,1-2-3-4,Class 7
+hbnv_cx,3,sx,gbfdvxcz,1-2-3-4,Class 7
+hbnv_cx,4,sx,gbfdvxcz,1-2-3-4,Class 7
+hbnv_cx,5,sx,gbfdvxcz,1-2-3-4,Class 7
+hbnv_cx,6,sx,gbfdvxcz,1-2-3-4,Class 8
+hbnv_cx,7,sx,gbfdvxcz,1-2-3-4,Class 8
+hbnv_cx,8,sx,gbfdvxcz,1-2-3-4,Class 8
+hbnv_cx,9,sx,gbfdvxcz,1-2-3-4,Class 8
+hbnv_cx,10,sx,gbfdvxcz,1-2-3-4,Class 8
+hbnv_cx,11,sx,gbfdvxcz,1-2-3-4,Class 9
