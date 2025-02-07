@@ -159,8 +159,10 @@ for subjIdx = 1:length(subjects)
     end
 end
 
-% Salva la tabella dei metadati in un file CSV
-writetable(dataTable, 'Metadati.csv');
+% Salva la tabella dei metadati in un file CSV (senza nomi delle variabili
+%                                               così c'è corrispondenza con
+%                                               il mergedSignalStruct).
+writetable(dataTable, 'Metadati.csv', 'WriteVariableNames', false);
 disp('File Metadati.csv generato con tutte le acquisizioni!');
 
 %% Funzioni
