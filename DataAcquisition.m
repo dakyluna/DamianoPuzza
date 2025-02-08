@@ -30,7 +30,7 @@ smartphoneModel = input('Inserisci il modello dello smartphone: ', 's');
 % Richiede all'utente di specificare la mano utilizzata (accetta solo "dx" o "sx")
 while true
     hand = input('Mano utilizzata (dx/sx): ', 's');
-    if ismember(hand, {'dx', 'sx'}),
+    if ismember(hand, {'dx', 'sx'})
         break;
     else
         disp('Input non valido!');
