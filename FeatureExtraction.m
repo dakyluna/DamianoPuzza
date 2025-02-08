@@ -87,3 +87,5 @@ writetable(featureTable, 'GestureFeatures.csv');
 disp('Feature estratte correttamente!');
 disp('Ora puoi aprire il Classification Learner utilizzando il comando:');
 disp('classificationLearner');
+
+
